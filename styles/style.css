@@ -172,8 +172,8 @@ ul > li::before {
 }
 
 main {
-  height: 50vh;
-  max-height: 50vh;
+  height: 55vh;
+  max-height: 55vh;
   padding: 25px;
   border: 2px solid grey;
   box-shadow: 5px 5px black;
@@ -220,6 +220,8 @@ main img {
     margin: 25px 0px 25px 0px;
     padding: 15px;
     text-align: inherit;
+    height: 40vh;
+    max-height: 40vh;
   }
 
   nav {
