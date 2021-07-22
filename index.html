@@ -3,7 +3,7 @@
   <head>
     <title>Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700|Roboto:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
@@ -20,60 +20,89 @@
       <nav id="navbar">
         <div id="nav-container">
           <i class="fas fa-chevron-down mobile-only" id="nav-container-expand"></i>
-          <h3>Navigation</h3>
+          <header>
+            <h3>Navigation</h3>
+          </header>
         </div>
-        <ul id="nav-items" class="expanded">
-          <li>
-            <a href="#header-section_1">Nav item 1</a>
-          </li>
-          <li>
-            <a href="#header-section_2">Nav item 2</a>
-          </li>
-          <li>
-            <a href="#header-section_3">Nav item 3</a>
-          </li>
-          <li>
-            <a href="#header-section_4">Nav item 4</a>
-          </li>
-          <li>
-            <a href="#header-section_5">Nav item 4</a>
-          </li>
+        <ul id="nav-items">
+          <li><a href="#general" class="nav-link">General</a></li>
+          <li><a href="#flex_container" class="nav-link">Flex container</a></li>
+          <li><a href="#flex_items" class="nav-link">Flex items</a></li>
+          <li><a href="#test_your_skills" class="nav-link">Test your skills</a></li>
+          <li><a href="#examples" class="nav-link">Examples</a></li>
         </ul>
       </nav>
       <main id="main-doc">
         <div>
-          <section class="main-section">
-            <header class="main-section-header" id="header-section_1">Section 1</header>
+          <section class="main-section" id="general">
+            <header class="main-section-header">General</header>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
-            </p>
-            <code></code>
-            <ul>
-              <li></li>
-            </ul>
-          </section>
-          <section class="main-section">
-            <header class="main-section-header" id="header-section_2">Section 2</header>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+              CSS flexbox is a concept that allows for ordering elements in rows or columns. It is great for repsonsive layouts!
             </p>
           </section>
-          <section class="main-section">
-            <header class="main-section-header" id="header-section_3">Section 3</header>
+          <section class="main-section" id="flex_container">
+            <header class="main-section-header">Flex container</header>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+              Adding <code class="inline">display: flex</code> to an element turns it into a flex container. This makes it possible to align any children of that element into rows or columns.
+              <img src="https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg">
+              <code class="inline">flex-direction</code> determines the direction of child elements:
+              <ul>
+                <li>row (default)</li>
+                <li>column</li>
+                <li>row-reverse</li>
+                <li>column-reverse</li>
+              </ul>
+            </p>
+            <p>
+              <code class="inline">justify-content</code> determines how child elements should be positioned along the <strong>main axis</strong>:
+              <ul>
+                <li>flex-start (default)</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>space-between</li>
+                <li>space-around</li>
+                <li>space-evenly</li>
+              </ul>
+            </p>
+            <p>
+              <code class="inline">align-items</code> determines how child elements should be positioned along the <strong>cross axis</strong>:
+              <ul>
+                <li>flex-start (default)</li>
+                <li>flex-end</li>
+                <li>center</li>
+                <li>stretch</li>
+                <li>baseline</li>
+              </ul>
+            </p>
+            <p>
+              By default, a flex container fits all child elements together. If the flex container is too small for the items inside, <code class="inline">flex-wrap: wrap</code> allows for wrapping the flex items.
             </p>
           </section>
-          <section class="main-section">
-            <header class="main-section-header" id="header-section_4">Section 4</header>
+          <section class="main-section" id="flex_items">
+            <header class="main-section-header">Flex items</header>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+              Flex items will shrink if the surrounding container is too small. By specifying a <code class="inline">flex-shrink</code> property for the items, it is possible to control how much the items will shrink in relation to each other.
+            </p>
+            <p>
+              Flex items will not automatically expand if the surrounding container is too big. But by specifying <code class="inline">flex-grow</code> it is possible to make that happen. Again, it is used to determine the behaviour of the flex items in relation to each other.
+            </p>
+            <p>
+              <code class="inline">flex-basis</code> sets the width of a flex item and is by default equal to the <code class="inline">width</code> of the element, but will overwrite <code class="inline">width</code> if set. Also, <code class="inline">flex-basis</code> is the width along the main axis, whereas <code class="inline">width</code> is the horizontal width.
             </p>
           </section>
-          <section class="main-section">
-            <header class="main-section-header" id="header-section_5">Section 5</header>
+          <section class="main-section" id="test_your_skills">
+            <header class="main-section-header">Test your skills</header>
             <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+              The <a href="https://developer.mozilla.org/">Mozilla Developer Network</a> is always a great resource to learn about web development. It offers a <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills">few exercises</a> to test your skills with CSS flexbox.
+            </p>
+            <p>
+              Another rather funny way to practise the concepts behind CSS flexbox is <a href="https://flexboxfroggy.com">Flexbox Froggy</a>.
+            </p>
+          </section>
+          <section class="main-section" id="examples">
+            <header class="main-section-header">Examples</header>
+            <p>
+              <a href="">CSS Tricks</a> is an awesome resource for everything related to CSS. It delivers a wealth of "real life" examples for the use of CSS flexbox. For example, <a href="https://css-tricks.com/designing-a-product-page-layout-with-flexbox/">designing a product page with flexbox</a>. Besides that, check out the other <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-tricks">CSS flexbox tricks</a>.
             </p>
           </section>
         </div>
